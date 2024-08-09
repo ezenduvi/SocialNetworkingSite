@@ -11,8 +11,6 @@ This project is a multi-threaded web server with a distributed database that imp
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Bonus Implementation](#bonus-implementation)
-- [License](#license)
 
 ## Project Overview
 
@@ -57,7 +55,8 @@ All tweets are stored in a distributed database that uses a Two-Phase Commit (2P
     python3 worker.py [port]
 3. **Run the web server:**:
     python3 coordinator.py [myport] [WorkerHost1:WorkerPort1] [WorkerHost2:WorkerPort2] ...
-Usage
+
+## Usage
 1. Access the web server:
 Open your web browser and navigate to http://localhost:[webserver_port].
 
@@ -65,8 +64,11 @@ Open your web browser and navigate to http://localhost:[webserver_port].
 Log in using any username.
 Post a tweet via the input field.
 View and update existing tweets.
+
 3. Database interactions:
 All interactions with tweets (viewing, posting, updating) are handled by the 2PC distributed database, ensuring strong consistency.
+
+## api-endpoints
 
 API Endpoints
 GET /api/tweet: Retrieves all tweets.
